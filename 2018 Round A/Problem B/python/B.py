@@ -2,7 +2,7 @@
 import sys
 from bisect import bisect_right
 
-DEBUG = True
+DEBUG = False
 if DEBUG:
     fin = open('B-large-practice.in', 'r')
     fout = open('B-large-practice.out', 'w')
