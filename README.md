@@ -6,3 +6,5 @@
 数字，数位，贪心构造，分析能力
 ### Problem B —— Lucky Dip
 动态规划，二分搜索优化
+### Problem C —— Scrambled Words
+字符串问题，频率数组，哈希，复杂度优化
