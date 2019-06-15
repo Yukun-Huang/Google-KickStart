@@ -48,9 +48,6 @@ int solution(){
             if (i + l - 1 > N)
                 break;
             S_freq[int(S[i] - 97)]++;
-            if (l > 500){
-                cout << "???"<< endl;
-            }
         }
 
         // init W_freq
