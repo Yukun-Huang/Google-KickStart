@@ -7,7 +7,7 @@
 ### Problem B —— Lucky Dip
 动态规划，二分搜索优化
 ### Problem C —— Scrambled Words
-字符串问题，频率数组，哈希，复杂度优化
+字符串问题，频率数组，哈希，复杂度优化 (大数据集待解决)
 
 ## 2018 Round B
 ### Problem A —— No Nine
