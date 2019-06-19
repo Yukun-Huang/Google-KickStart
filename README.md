@@ -15,7 +15,7 @@
 ### Problem B —— Sherlock and the Bit Strings (大数据集待解决)
 二进制字符串，动态规划
 ### Problem C —— King's Circle (大数据集待解决)
-几何，二维累积数组
+平面几何，二维累积数组
 
 
 # 经验教训（主要针对c++）
