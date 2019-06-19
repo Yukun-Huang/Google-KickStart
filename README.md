@@ -6,9 +6,20 @@
 数字，数位，贪心构造，分析能力
 ### Problem B —— Lucky Dip
 动态规划，二分搜索优化
-### Problem C —— Scrambled Words
-字符串问题，频率数组，哈希，复杂度优化 (大数据集待解决)
+### Problem C —— Scrambled Words (大数据集待解决)
+字符串问题，频率数组，哈希，复杂度优化
 
 ## 2018 Round B
 ### Problem A —— No Nine
 数字，数位，分析能力，找规律
+### Problem B —— Sherlock and the Bit Strings (大数据集待解决)
+二进制字符串，动态规划
+### Problem C —— King's Circle (大数据集待解决)
+几何，二维累积和数组
+
+
+# 经验教训（主要针对c++）
+
+1.在读入数据时如果使用了int类型存储，尽管数据本身没有超范围，但是在进行乘法计算时却可能会产生数值溢出。这在以后必须要考虑到。
+
+2.使用全局定义的数组来存储数据时，要记得在每个case开始时用memset函数初始化一下。否则会产生很隐蔽的bug。
