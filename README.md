@@ -17,6 +17,10 @@
 ### Problem C —— King's Circle (大数据集待解决)
 平面几何，二维累积数组
 
+## 2018 Round C
+### Problem A —— Planet Distance
+图，深度优先遍历，广度优先遍历，无向图找环
+
 
 # 经验教训（主要针对c++）
 
