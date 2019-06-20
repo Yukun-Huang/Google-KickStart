@@ -3,13 +3,13 @@ import sys
 
 DEBUG = True
 if DEBUG:
-    fin = open('C-small-practice.in', 'r')
-    fout = open('C-small-practice.out', 'w')
-    # fin = open('C-large-practice.in', 'r')
-    # fout = open('C-large-practice.out', 'w')
+    # fin = open('C-small-practice.in', 'r')
+    # fout = open('C-small-practice.out', 'w')
+    fin = open('C-large-practice.in', 'r')
+    fout = open('C-large-practice.out', 'w')
 
     sys.stdin = fin
-    sys.stdout = fout
+    # sys.stdout = fout
 
 
 # O(N)
@@ -25,7 +25,7 @@ def calc_A(N, x1, y1, C, D, E1, E2, F):
 
 
 # O(logK * N^2)
-def solution(N, K, A):
+def solution_slow(N, K, A):
     answer = 0
     for n in range(1, N+1):
         for nn in range(1, n+1):
@@ -63,7 +63,7 @@ def quick_pow(b, e, m):
 
 
 # O(logK * N)
-def solution_better(N, K, A):
+def solution_faster(N, K, A):
     answer = 0
     mod = 1000000007
     GP_sum = K
@@ -78,13 +78,13 @@ def solution_better(N, K, A):
 
 def solution_final(N, K, A):
     result = 0
-    GP_sum = K # Handling p = 1 case separately.
+    GP_sum = K  # Handling p = 1 case separately.
     mod = 1000000007
     for x in range(1, N+1):
         if x != 1:
-            GP_sum = GP_sum + x * (pow(x, K, mod)-1) * pow(x-1, mod-2, mod) # Multipyting by inverse modulo of x-1.
+            GP_sum += x * (pow(x, K, mod)-1) % mod * pow(x-1, mod-2, mod) % mod
             GP_sum %= mod
-        result = result + GP_sum * A[x-1] * (N-x+1)
+        result += GP_sum * A[x-1] % mod * (N-x+1) % mod
         result %= mod
     return result
 

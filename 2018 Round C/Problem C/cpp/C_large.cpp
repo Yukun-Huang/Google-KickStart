@@ -47,16 +47,23 @@ LL quick_pow_with_mod(LL x, LL n, LL m) {
 }
 
 
-/************ solution for small dataset ***********/
+/************ solution for large dataset ***********/
 uLL solution() {
 	uLL ans = 0;
-	for (int k = 1; k <= K; ++k)
-		for (int L = 1; L <= N; ++L)
-			for (int R = L; R <= N; ++R)
-				for (int j = L; j <= R; ++j) {
-					ans += A[j] * quick_pow_with_mod(j - L + 1, k, MOD);
-					ans %= MOD;
-				}
+	uLL sum_gem = 0;
+	for (uLL i = 1; i <= N; ++i) {
+		if (i == 1) {
+			ans += A[i] * (N - i + 1) % MOD * K % MOD;
+			ans %= MOD;
+		}
+		else {
+			sum_gem += i * (quick_pow_with_mod(i, K, MOD)-1) % MOD * 
+				quick_pow_with_mod(i - 1, MOD-2, MOD) % MOD;
+			sum_gem %= MOD;
+			ans += A[i] * (N - i + 1) % MOD * ((K + sum_gem) % MOD) % MOD;
+			ans %= MOD;
+		}
+	}
 	return ans;
 }
 
@@ -64,8 +71,10 @@ uLL solution() {
 int main() {
 	// redirection
 	if (1) {
-		freopen("C-small-practice.in", "r", stdin);
-		freopen("C-small-practice.out", "w", stdout);
+		//freopen("C-small-practice.in", "r", stdin);
+		//freopen("C-small-practice.out", "w", stdout);
+		freopen("C-large-practice.in", "r", stdin);
+		freopen("C-large-practice.out", "w", stdout);
 	}
 
 	ios_base::sync_with_stdio(false);
