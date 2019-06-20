@@ -19,7 +19,11 @@
 
 ## 2018 Round C
 ### Problem A —— Planet Distance
-图，深度优先遍历，广度优先遍历，无向图找环
+图相关，深度优先遍历，广度优先遍历，无向图找环
+### Problem B —— Fairies and Witches
+aaa
+### Problem C —— Kickstart Alarm
+数学相关（等比数列求和，费马小定理），快速幂，大数取模，乘法逆元
 
 
 # 经验教训（主要针对c++）
