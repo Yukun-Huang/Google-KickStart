@@ -21,7 +21,7 @@
 ### Problem A —— Planet Distance
 图相关，深度优先遍历，广度优先遍历，无向图找环
 ### Problem B —— Fairies and Witches
-aaa
+回溯法，图相关，平面几何
 ### Problem C —— Kickstart Alarm
 数学相关（等比数列求和，费马小定理），快速幂，大数取模，乘法逆元
 
