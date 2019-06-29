@@ -17,16 +17,13 @@
 #include <iomanip>
 #include <complex>
 #include <functional>	// greater, less
-#include <limits>
 
 #define FOR(i,n) for (int i = 1 ; i <= n ; ++i)
 #define RFOR(i,n) for (int i = n ; i >= 1 ; --i)
 #define REP(i,n) for (int i = 0 ; i < n ; ++i)
-
 #define MOD 1000000007
 
 using namespace std;
-
 typedef unsigned long long uLL;
 typedef long long LL;
 
@@ -41,31 +38,27 @@ LL pre_sum[MAX_N];
 
 
 LL solution(bool &has_solution) {
-	LL max_score = LLONG_MIN;
+	LL max_score = INT64_MIN;
 	FOR(i, N) {
 		pre_odd[i] = pre_odd[i - 1] + S[i] % 2;
 		pre_sum[i] = pre_sum[i - 1] + S[i];
 	}
 	LL left = 1, right = 1;
 	LL odd = 0, sum = 0;
-	while(1) {
-		odd = pre_odd[right] - pre_odd[left - 1];
-		sum = pre_sum[right] - pre_sum[left - 1];
-		if (odd <= O && sum <= D) {
-			has_solution = true;
-			if (sum > max_score)
-				max_score = sum;
-			if (right < N)
-				right++;
-			else
-				left++;
-		}
-		else {
-			left++;
-			right = max(left, right);
-		}
-		if (left > N)
-			break;
+	for(; left <= N; left++){
+        right = max(left, right);
+        while(right <= N){
+            odd = pre_odd[right] - pre_odd[left - 1];
+            sum = pre_sum[right] - pre_sum[left - 1];
+            if (odd <= O && sum <= D) {
+                right++;
+                has_solution = true;
+                if (sum > max_score)
+                    max_score = sum;
+            }
+            else
+                break;
+        }
 	}
 	return max_score;
 }
@@ -73,8 +66,8 @@ LL solution(bool &has_solution) {
 int main() {
 	// redirection
 	if (1) {
-		freopen("A-small-practice.in", "r", stdin);
-		freopen("A-small-practice.out", "w", stdout);
+		freopen("../A-small-practice.in", "r", stdin);
+		freopen("../A-small-practice.out", "w", stdout);
 	}
 
 	ios_base::sync_with_stdio(false);
