@@ -25,6 +25,14 @@
 ### Problem C —— Kickstart Alarm
 数学相关（等比数列求和，费马小定理），快速幂，大数取模，乘法逆元
 
+## 2018 Round D
+### Problem A —— Candies
+双指针法，滑动窗口，平衡二叉搜索树，STL multiset
+### Problem B —— 
+aaa
+### Problem C —— 
+aaa
+
 
 # 经验教训（主要针对c++）
 
