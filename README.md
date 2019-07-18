@@ -30,8 +30,8 @@
 双指针法，滑动窗口，平衡二叉搜索树，STL multiset
 ### Problem B —— Paragliding
 平面几何，坐标点的排序
-### Problem C —— 
-aaa
+### Problem C —— Funniest Word Search (大数据集待解决)
+二维累积数组，子网格遍历
 
 
 # 经验教训（主要针对c++）
