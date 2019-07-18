@@ -31,7 +31,7 @@
 ### Problem B —— Paragliding
 平面几何，坐标点的排序
 ### Problem C —— Funniest Word Search (大数据集待解决)
-二维累积数组，子网格遍历
+二维累积数组，最大公约数，子网格遍历
 
 
 # 经验教训（主要针对c++）
