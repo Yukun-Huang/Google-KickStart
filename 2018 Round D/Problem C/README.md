@@ -6,9 +6,9 @@
 
 2.给定一个有**W**个不同单词的词典。每个单词可能出现在网格中一次或多次，或者一个也没有。
 
-3.现在的网格太大了，我们需要找到一个非空的、网格对齐（即矩形）的子网格。我们希望找到一个具有最大fun值的子网格。
+3.现在的网格太大了，我们需要找到一个非空的、网格对齐（即矩形）的子网格。我们希望找到一个具有最大fun值的子网格。fun值计算如下：
 
-fun value = (total length of words matched) / ((width of subgrid) + (height of subgrid))
+               fun value = (total length of words matched) / ((width of subgrid) + (height of subgrid))
 
 注意：
 
@@ -50,4 +50,4 @@ Fun值的最简分数形式  子网格个数
 
 ### 代码积累
 
-二维累积数组，子网格遍历
+二维累积数组，最大公约数，子网格遍历
