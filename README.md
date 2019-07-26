@@ -33,6 +33,9 @@
 ### Problem C —— Funniest Word Search (大数据集待解决)
 二维累积数组，最大公约数，子网格遍历
 
+## 2019 Round A
+### Problem A —— Training
+滑动窗口
 
 # 经验教训（主要针对c++）
 
