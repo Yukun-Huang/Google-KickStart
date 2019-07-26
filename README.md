@@ -36,6 +36,9 @@
 ## 2019 Round A
 ### Problem A —— Training
 滑动窗口
+### Problem B —— Parcels
+二维网格，多源广度优先搜索，二分搜索，曼哈顿距离
+### Problem C —— Contention (待解决)
 
 # 经验教训（主要针对c++）
 
