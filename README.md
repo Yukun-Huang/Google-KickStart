@@ -44,7 +44,8 @@
 ## 2019 Round B
 ### Problem A —— Building Palindromes
 回文，字符出现频率，频率前缀和
-
+### Problem B —— Energy Stones
+动态规划，0-1背包问题
 
 # 经验教训（主要针对c++）
 
