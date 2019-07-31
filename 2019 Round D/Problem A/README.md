@@ -1,66 +1,64 @@
 ### A. X or What?
 
-### ÃèÊö
+### æè¿°
 
-¸ø¶¨N¸ö·Ç¸ºÕûÊýºÍQ¸ö²Ù×÷£¬Ã¿´Î²Ù×÷´ÓÖÐÑ¡ÔñÒ»¸öÊý²¢Ìæ»»ÎªÁíÒ»¸öÊý¡£ÎÊÃ¿´Î²Ù×÷ºóËùÓÐxor-even×ÓÇø¼äµÄ×î´ó³¤¶ÈÊÇ¶àÉÙ¡£
+ç»™å®šNä¸ªéžè´Ÿæ•´æ•°å’ŒQä¸ªæ“ä½œï¼Œæ¯æ¬¡æ“ä½œä»Žä¸­é€‰æ‹©ä¸€ä¸ªæ•°å¹¶æ›¿æ¢ä¸ºå¦ä¸€ä¸ªæ•°ã€‚é—®æ¯æ¬¡æ“ä½œåŽæ‰€æœ‰xor-evenå­åŒºé—´çš„æœ€å¤§é•¿åº¦æ˜¯å¤šå°‘ã€‚
 
-xor-even×ÓÇø¼ä¶¨Òå£ºÇó¸ÃÇø¼äÄÚËùÓÐÕûÊýÒì»òµÄ½á¹û£¬Èô¸Ã½á¹ûÓÐÅ¼Êý¸ö1£¬ÔòÎªxor-even×ÓÇø¼ä¡£
+xor-evenå­åŒºé—´å®šä¹‰ï¼šæ±‚è¯¥åŒºé—´å†…æ‰€æœ‰æ•´æ•°å¼‚æˆ–çš„ç»“æžœï¼Œè‹¥è¯¥ç»“æžœæœ‰å¶æ•°ä¸ª1ï¼Œåˆ™ä¸ºxor-evenå­åŒºé—´ã€‚
 
-### ·ÖÎö
+### åˆ†æž
 
-**¶ÔÓÚÐ¡Êý¾Ý¼¯**£º
+**å¼‚æˆ–æ€§è´¨**
 
-Òì»òÐÔÖÊ1£º
+æ€§è´¨1
 
-ÔÙÒì»òÒ»´ÎµÈÓÚµÖÏûÁËÒì»ò¡£ÀýÈç£ºA xor B xor C xor C = A xor B
+å†å¼‚æˆ–ä¸€æ¬¡ç­‰äºŽæŠµæ¶ˆäº†å¼‚æˆ–ã€‚ä¾‹å¦‚ï¼šA xor B xor C xor C = A xor B
 
-½â·¨£º
+æ€§è´¨2
 
-1.ÇóÒì»òÇ°×ººÍO(n),ÊµÏÖO(1)Ê±¼äµÄÈÎÒâÇø¼äÇóÒì»ò½á¹û¡£
+1.ä¸¤ä¸ªxor-evençš„æ•´åž‹æ•°å¼‚æˆ–ï¼Œç»“æžœä»ç„¶æ˜¯xor-even;
 
-2.±éÀúËùÓÐ×ÓÇø¼ä£¬O(n^2),ÅÐ¶Ï¸ÃÇø¼äÊÇ·ñÎªxor-even.ÕÒµ½×î´óÇø¼ä³¤¶È¡£
+2.ä¸¤ä¸ªxor-oddçš„æ•´åž‹æ•°å¼‚æˆ–ï¼Œç»“æžœä»ç„¶æ˜¯xor-even;
 
-3.¶ÔÃ¿Ò»¸öQ¶¼½øÐÐÏàÍ¬µÄ´¦Àí¡£
+3.ä¸€ä¸ªxor-evenå’Œä¸€ä¸ªxor-oddæ•´åž‹æ•°å¼‚æˆ–ï¼Œç»“æžœæ˜¯xor-odd.
 
-**¶ÔÓÚ´óÊý¾Ý¼¯**£º
+æ€§è´¨2è¯æ˜Ž
 
-Òì»òÐÔÖÊ2£º
+å‡è®¾ï¼šæ€»ä½æ•°ä¸ºw,æ•°ä¸€æ‹¥æœ‰xä¸ª0,æ•°äºŒæ‹¥æœ‰yä¸ª0,æ•°ä¸€ä¸­0åŒ¹é…äº†æ•°äºŒä¸­kä¸ª1(k<=x)ã€‚
 
-1.Á½¸öxor-evenµÄÕûÐÍÊýÒì»ò£¬½á¹ûÈÔÈ»ÊÇxor-even;
+å› ä¸ºå¼‚æˆ–è¿ç®—äº§ç”Ÿ1åªæœ‰ä¸¤ç§æƒ…å†µï¼šæ•°ä¸€çš„0ä¸Žæ•°äºŒçš„1,æ•°ä¸€çš„1ä¸Žæ•°äºŒçš„0.
 
-2.Á½¸öxor-oddµÄÕûÐÍÊýÒì»ò£¬½á¹ûÈÔÈ»ÊÇxor-even;
+ç¬¬ä¸€ç§æƒ…å†µ1çš„ä¸ªæ•°ï¼šk.
 
-3.Ò»¸öxor-evenºÍÒ»¸öxor-oddÕûÐÍÊýÒì»ò£¬½á¹ûÊÇxor-odd.
+ç¬¬äºŒç§æƒ…å†µ1çš„ä¸ªæ•°ï¼šæ•°ä¸€ä¸­0ä¸Žæ•°äºŒä¸­0åŒ¹é…çš„ä¸ªæ•°ä¸ºx-k,è¿™ä¸ä¼šäº§ç”Ÿ1,è¿™æ—¶1çš„ä¸ªæ•°åº”ä¸ºï¼šy-(x-k)
 
-Ö¤Ã÷£º
+æ•…1çš„æ€»ä¸ªæ•°ä¸ºï¼šk+y-(x-k)=2*k+y-x
 
-¼ÙÉè£º×ÜÎ»ÊýÎªw,ÊýÒ»ÓµÓÐx¸ö0,Êý¶þÓµÓÐy¸ö0,ÊýÒ»ÖÐ0Æ¥ÅäÁËÊý¶þÖÐk¸ö1(k<=x)¡£
+æ‘˜è‡ªåšå®¢ï¼šhttps://blog.csdn.net/zhang_yang_43/article/details/72818933 
 
-ÒòÎªÒì»òÔËËã²úÉú1Ö»ÓÐÁ½ÖÖÇé¿ö£ºÊýÒ»µÄ0ÓëÊý¶þµÄ1,ÊýÒ»µÄ1ÓëÊý¶þµÄ0.
+**å¯¹äºŽå°æ•°æ®é›†**
 
-µÚÒ»ÖÖÇé¿ö1µÄ¸öÊý£ºk.
+1.æ±‚å¼‚æˆ–å‰ç¼€å’ŒO(n),å®žçŽ°O(1)æ—¶é—´çš„ä»»æ„åŒºé—´æ±‚å¼‚æˆ–ç»“æžœã€‚
 
-µÚ¶þÖÖÇé¿ö1µÄ¸öÊý£ºÊýÒ»ÖÐ0ÓëÊý¶þÖÐ0Æ¥ÅäµÄ¸öÊýÎªx-k,Õâ²»»á²úÉú1,ÕâÊ±1µÄ¸öÊýÓ¦Îª£ºy-(x-k)
+2.éåŽ†æ‰€æœ‰å­åŒºé—´ï¼ŒO(n^2),åˆ¤æ–­è¯¥åŒºé—´æ˜¯å¦ä¸ºxor-even.æ‰¾åˆ°æœ€å¤§åŒºé—´é•¿åº¦ã€‚
 
-¹Ê1µÄ×Ü¸öÊýÎª£ºk+y-(x-k)=2*k+y-x
+3.å¯¹æ¯ä¸€ä¸ªQéƒ½è¿›è¡Œç›¸åŒçš„å¤„ç†ã€‚
 
-Õª×Ô²©¿Í£ºhttps://blog.csdn.net/zhang_yang_43/article/details/72818933 
+**å¯¹äºŽå¤§æ•°æ®é›†**
 
-ÖØÒªÍÆÂÛ£º
+æ€§è´¨2çš„é‡è¦æŽ¨è®º
 
-Èç¹ûÄ³Çø¼äÄÚÓÐÅ¼Êý¸öxor-oddÊý£¬Ôò¸ÃÇø¼äÊÇxor-even£»·ñÔòÎªxor-odd.
+å¦‚æžœæŸåŒºé—´å†…æœ‰å¶æ•°ä¸ªxor-oddæ•°ï¼Œåˆ™è¯¥åŒºé—´æ˜¯xor-evenï¼›å¦åˆ™ä¸ºxor-odd.
 
-½â·¨£º
+è§£æ³•
 
-1.±éÀúÇø¼ä£¬ÕÒ³öËùÓÐxor-oddÊýµÄÎ»ÖÃ£¬ÓÃset´æ´¢¡£
+1.éåŽ†åŒºé—´ï¼Œæ‰¾å‡ºæ‰€æœ‰xor-oddæ•°çš„ä½ç½®ï¼Œç”¨setå­˜å‚¨ã€‚
 
-2.¶ÔÓÚÃ¿Ò»´ÎµÄÐÞ¸Ä£¬¸üÐÂset£¬¼´²åÈëºÍÉ¾³ý¡£
+2.å¯¹äºŽæ¯ä¸€æ¬¡çš„ä¿®æ”¹ï¼Œæ›´æ–°setï¼Œå³æ’å…¥å’Œåˆ é™¤ã€‚
 
-3.ÕÒ×î´óÇø¼äÊ±£¬Èç¹ûµ±Ç°setµÄsizeÎªeven£¬ÔòÕû¸öÇø¼ä¹¹³É×î´óÇø¼ä¡£
+3.æ‰¾æœ€å¤§åŒºé—´æ—¶ï¼Œå¦‚æžœå½“å‰setçš„sizeä¸ºevenï¼Œåˆ™æ•´ä¸ªåŒºé—´æž„æˆæœ€å¤§åŒºé—´ã€‚å¦åˆ™ï¼ŒåŽ»é™¤å·¦ç«¯çš„xor-oddæ•°æˆ–è€…åŽ»é™¤å³ç«¯çš„xor-oddæ•°ï¼Œæ‰¾åˆ°ç¬¦åˆçš„é‚£ä¸ªæœ€å¤§åŒºé—´ï¼ˆæ³¨æ„è¾¹ç•Œæƒ…å†µï¼‰ã€‚
 
-·ñÔò£¬È¥³ý×ó¶ËµÄxor-oddÊý»òÕßÈ¥³ýÓÒ¶ËµÄxor-oddÊý£¬ÕÒµ½·ûºÏµÄÄÇ¸ö×î´óÇø¼ä£¨×¢Òâ±ß½çÇé¿ö£©¡£
+### å…³é”®è¯
 
-### ¹Ø¼ü´Ê
-
-Òì»òµÄÐÔÖÊ£¬STL set
+å¼‚æˆ–çš„æ€§è´¨ï¼ŒSTL set
 
