@@ -49,6 +49,10 @@
 ### 2. Energy Stones
 动态规划，0-1背包问题
 
+## 2019 Round C
+### 1. Wiggle Walk
+二维网格，路径压缩，并查集
+
 ## 2019 Round D
 ### 1. X or What?
 异或的性质，STL set
