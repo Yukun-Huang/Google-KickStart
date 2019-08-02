@@ -25,8 +25,9 @@ public:
         return find(a)==find(b);
     }
     int find(int a){
-        while(id[a]!=a)a=id[a];
-        return a;
+        if(id[a] != a)
+            id[a] = find(id[a]);
+        return id[a];
     }
     void Union(int a,int b){
         int af=find(a),bf=find(b);
