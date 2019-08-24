@@ -52,6 +52,8 @@
 ## 2019 Round C
 ### 1. Wiggle Walk
 二维网格，路径压缩，并查集
+### 2. Circuit Board
+单调栈，二维网格
 
 ## 2019 Round D
 ### 1. X or What?
