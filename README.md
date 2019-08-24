@@ -14,7 +14,7 @@
 ## 2018 Round B
 ### 1. No Nine
 数字，数位，分析能力，找规律
-### 2. Sherlock and the Bit Strings*
+### 2. Sherlock and the Bit Strings
 二进制字符串，动态规划
 ### 3. King's Circle*
 平面几何，二维累积数组
