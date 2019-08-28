@@ -58,10 +58,13 @@
 ## 2019 Round D
 ### 1. X or What?
 异或的性质，STL set
+### 2. Latest Guests
+无
 
 ## 2019 Round E
 ### 1. Cherries Mesh
 图，最小生成树， Prim算法，并查集
+
 
 # 经验教训（主要针对c++）
 
