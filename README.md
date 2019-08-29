@@ -64,7 +64,8 @@
 ## 2019 Round E
 ### 1. Cherries Mesh
 图，最小生成树， Prim算法，并查集
-
+### 2. Code-Eat Switcher
+排序，前缀和，二分查找
 
 # 经验教训（主要针对c++）
 
