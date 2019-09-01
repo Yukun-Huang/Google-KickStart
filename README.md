@@ -60,14 +60,14 @@
 异或的性质，STL set
 ### 2. Latest Guests
 无
+### 3. Food Stalls*
+post-office-location problem，堆
 
 ## 2019 Round E
 ### 1. Cherries Mesh
 图，最小生成树， Prim算法，并查集
 ### 2. Code-Eat Switcher
 排序，前缀和，二分查找
-### 3. Food Stalls*
-post-office-location problem，堆
 
 # 经验教训（主要针对c++）
 
