@@ -59,7 +59,7 @@
 ### 1. X or What?
 异或的性质，STL set
 ### 2. Latest Guests
-无
+队列
 ### 3. Food Stalls*
 post-office-location problem，堆
 
